@@ -38,7 +38,7 @@ namespace Lab_Form
             Employee emp;
             emp.Name = txtEmpName.Text;
             //emp.Age = int.Parse(txtEmpAge.Text);
-            bool isNum = int.TryParse(txtEmpAge.Text, out age);
+            //bool isNum = int.TryParse(txtEmpAge.Text, out age);
             if(int.TryParse(txtEmpAge.Text, out age))
             {
                 emp.Age = age;

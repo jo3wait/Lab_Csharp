@@ -29,6 +29,7 @@ namespace Lab_FormHw
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Pose));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnProduct4 = new System.Windows.Forms.Button();
             this.btnProduct3 = new System.Windows.Forms.Button();
@@ -101,6 +102,8 @@ namespace Lab_FormHw
             // btnProduct1
             // 
             this.btnProduct1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnProduct1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProduct1.BackgroundImage")));
+            this.btnProduct1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnProduct1.Location = new System.Drawing.Point(47, 63);
             this.btnProduct1.Name = "btnProduct1";
             this.btnProduct1.Size = new System.Drawing.Size(81, 104);

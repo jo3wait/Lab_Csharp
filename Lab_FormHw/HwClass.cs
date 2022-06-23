@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab_FormHw
 {
-    public class PoseProduct
+    public struct StudentScore
     {
-        public string ProductName;
-        public int ProductPrice;
-        public int ProductCount;
+        public string StudentName;
+        public double StudentChi;
+        public double StudentEng;
+        public double StudentMath;
     }
 }
