@@ -140,7 +140,7 @@ namespace Lab_Form
             Product p1 = new Product("AAA", 100), p2 = new Product("BBB", 1000);
             GenericSwap<Product>(ref p1, ref p2);
             MessageBox.Show($"a: {p1.ProductName}, b: {p2.ProductName}");
-
+        
             Point point1 = new Point(100, 100), point2 = new Point(200, 200);
             MessageBox.Show($"a: {point1} , b:{point2}");
         }

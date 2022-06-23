@@ -38,7 +38,7 @@ namespace Lab_FormHw
         int priceWhisky = 0;
         int countWine = 0;
         int priceWine = 0;
-        int totalPrice = priceBeer + priceTequila + priceWhisky + priceWine;
+        int totalPrice = 0;
 
         private void btnProduct1_Click(object sender, EventArgs e)
         {
@@ -66,17 +66,16 @@ namespace Lab_FormHw
         {
             countWhisky += 1;
             priceWhisky = 350 * countWhisky;
+
+            ShowTotal();
         }
 
         private void btnProduct4_Click(object sender, EventArgs e)
         {
             countWine += 1;
             priceWine = 320 * countWine;
-        }
 
-        void ShowTotal()
-        {
-            labTotal.Text = $"{totalPrice:c0}";
+            ShowTotal();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -84,6 +83,12 @@ namespace Lab_FormHw
             labList.Text = "尚未點餐";
             labTotal.Text = "NT$ 0";
         }
+
+        void ShowTotal()
+        {
+            totalPrice = priceBeer + priceTequila + priceWhisky + priceWine;
+            labTotal.Text = $"{totalPrice:c0}";
+        }              
 
         private void btnCash_Click(object sender, EventArgs e)
         {

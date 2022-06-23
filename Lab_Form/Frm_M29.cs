@@ -48,7 +48,7 @@ namespace Lab_Form
             {
                 MessageBox.Show("請輸入數字");
             }
-
+            
             //lstEmp.Add(emp);
             // object -> boxing
 
