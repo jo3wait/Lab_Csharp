@@ -25,7 +25,7 @@ namespace Lab_Consloe
             MyFirstClass mc = new MyFirstClass();
             mc.Method04();
 
-            Console.ReadKey(); //執行完會自動關閉，ReadKey保留畫面
+            Console.ReadKey(); //without this執行完會自動關閉，ReadKey保留畫面
         }
     }
 }

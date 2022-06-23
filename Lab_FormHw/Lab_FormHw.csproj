@@ -76,6 +76,7 @@
     <Compile Include="Frm_Pose.Designer.cs">
       <DependentUpon>Frm_Pose.cs</DependentUpon>
     </Compile>
+    <Compile Include="HwClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

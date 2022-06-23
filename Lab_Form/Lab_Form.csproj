@@ -106,6 +106,18 @@
     <Compile Include="Frm_M26_array.Designer.cs">
       <DependentUpon>Frm_M26_array.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_M28.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M28.Designer.cs">
+      <DependentUpon>Frm_M28.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_M29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M29.Designer.cs">
+      <DependentUpon>Frm_M29.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyFirstClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -139,6 +151,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_M26_array.resx">
       <DependentUpon>Frm_M26_array.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M28.resx">
+      <DependentUpon>Frm_M28.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M29.resx">
+      <DependentUpon>Frm_M29.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

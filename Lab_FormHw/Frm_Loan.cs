@@ -29,12 +29,20 @@ namespace Lab_FormHw
             return Math.Round(p);
         }
 
+        //todo 可以寫在方法外面嗎
+        //double l = Convert.ToDouble(txtLoan.Text);
+        //int y = int.Parse(txtYear.Text);
+        //double i = Convert.ToDouble(txtInterest.Text);
+        //double f = Convert.ToDouble(txtFirst.Text);
+
+        //todo 可加TryParse
+
         private void btnPMT_Click(object sender, EventArgs e)
         {
-            double l = Convert.ToDouble(txtLoan.Text);
+            double l = double.Parse(txtLoan.Text);
             int y = int.Parse(txtYear.Text);
-            double i = Convert.ToDouble(txtInterest.Text);
-            double f = Convert.ToDouble(txtFirst.Text);
+            double i = double.Parse(txtInterest.Text);
+            double f = double.Parse(txtFirst.Text);
 
             int perMonth = (int)PMT(l, y, i, f);
             //int pm = (int)Math.Round(perMonth);

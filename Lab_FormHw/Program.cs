@@ -16,7 +16,7 @@ namespace Lab_FormHw
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Loan());
+            Application.Run(new Frm_Pose());
         }
     }
 }
