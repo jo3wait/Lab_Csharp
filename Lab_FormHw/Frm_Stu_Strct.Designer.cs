@@ -40,9 +40,9 @@ namespace Lab_FormHw
             this.btnSave = new System.Windows.Forms.Button();
             this.btnShow = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnMaxMin = new System.Windows.Forms.Button();
-            this.labScore = new System.Windows.Forms.Label();
             this.labMaxMin = new System.Windows.Forms.Label();
+            this.labScore = new System.Windows.Forms.Label();
+            this.btnMaxMin = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -161,16 +161,14 @@ namespace Lab_FormHw
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "成績";
             // 
-            // btnMaxMin
+            // labMaxMin
             // 
-            this.btnMaxMin.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnMaxMin.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnMaxMin.Location = new System.Drawing.Point(516, 358);
-            this.btnMaxMin.Name = "btnMaxMin";
-            this.btnMaxMin.Size = new System.Drawing.Size(153, 39);
-            this.btnMaxMin.TabIndex = 11;
-            this.btnMaxMin.Text = "最高分/最低分科目";
-            this.btnMaxMin.UseVisualStyleBackColor = false;
+            this.labMaxMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labMaxMin.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labMaxMin.Location = new System.Drawing.Point(11, 224);
+            this.labMaxMin.Name = "labMaxMin";
+            this.labMaxMin.Size = new System.Drawing.Size(254, 71);
+            this.labMaxMin.TabIndex = 1;
             // 
             // labScore
             // 
@@ -181,14 +179,17 @@ namespace Lab_FormHw
             this.labScore.Size = new System.Drawing.Size(254, 185);
             this.labScore.TabIndex = 0;
             // 
-            // labMaxMin
+            // btnMaxMin
             // 
-            this.labMaxMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labMaxMin.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labMaxMin.Location = new System.Drawing.Point(11, 224);
-            this.labMaxMin.Name = "labMaxMin";
-            this.labMaxMin.Size = new System.Drawing.Size(254, 71);
-            this.labMaxMin.TabIndex = 1;
+            this.btnMaxMin.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnMaxMin.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnMaxMin.Location = new System.Drawing.Point(516, 358);
+            this.btnMaxMin.Name = "btnMaxMin";
+            this.btnMaxMin.Size = new System.Drawing.Size(153, 39);
+            this.btnMaxMin.TabIndex = 11;
+            this.btnMaxMin.Text = "最高分/最低分科目";
+            this.btnMaxMin.UseVisualStyleBackColor = false;
+            this.btnMaxMin.Click += new System.EventHandler(this.btnMaxMin_Click);
             // 
             // Frm_Stu_Strct
             // 

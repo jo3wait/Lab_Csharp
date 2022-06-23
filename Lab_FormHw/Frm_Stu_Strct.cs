@@ -55,5 +55,12 @@ namespace Lab_FormHw
                     $"數學: {((StudentScore)lstStudentScore[i]).StudentMath}\n";
             }
         }
+
+        private void btnMaxMin_Click(object sender, EventArgs e)
+        {
+            //todo sort
+            lstStudentScore.Sort();
+            
+        }
     }
 }

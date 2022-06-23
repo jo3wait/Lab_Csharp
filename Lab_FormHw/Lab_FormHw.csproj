@@ -76,6 +76,12 @@
     <Compile Include="Frm_Pose.Designer.cs">
       <DependentUpon>Frm_Pose.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_StudentGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_StudentGrade.Designer.cs">
+      <DependentUpon>Frm_StudentGrade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Stu_Strct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Pose.resx">
       <DependentUpon>Frm_Pose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_StudentGrade.resx">
+      <DependentUpon>Frm_StudentGrade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Stu_Strct.resx">
       <DependentUpon>Frm_Stu_Strct.cs</DependentUpon>
