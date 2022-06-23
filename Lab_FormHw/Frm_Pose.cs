@@ -19,17 +19,6 @@ namespace Lab_FormHw
         }
 
 
-        //PoseProduct lstProduct = new PoseProduct();
-
-        //void ShowList()
-        //{
-        //    for (int i = 0; i < lstProduct.; i++)
-        //    {
-        //        labList.Text += $"{lstProduct.ProductName} x {lstProduct.ProductCount} = " +
-        //            $"{lstProduct.ProductPrice* lstProduct.ProductCount:c0}\n"; // unboxing
-        //    }            
-        //}
-
         int countBeer, countTequila, countWhisky, countWine;
         int priceBeer, priceTequila, priceWhisky, priceWine, totalPrice;
         int pricePerBeer = 120, pricePerTequila = 180, 

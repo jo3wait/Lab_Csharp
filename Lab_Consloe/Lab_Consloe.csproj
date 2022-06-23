@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Lab_FormHw\Lab_FormHw.csproj">
+      <Project>{f70d536b-0ad7-4335-9e7b-3e2ddc04bac6}</Project>
+      <Name>Lab_FormHw</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lab_Form\Lab_Form.csproj">
       <Project>{b9e90a2a-5f22-48c2-bc71-64035b454713}</Project>
       <Name>Lab_Form</Name>
