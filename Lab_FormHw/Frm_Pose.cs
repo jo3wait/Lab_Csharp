@@ -38,7 +38,6 @@ namespace Lab_FormHw
 
         private void btnProduct1_Click(object sender, EventArgs e)
         {
-            //labList.Text = "";
             countBeer += 1;
             priceBeer = pricePerBeer * countBeer;
             if (countBeer >= 1)
@@ -51,7 +50,6 @@ namespace Lab_FormHw
 
         private void btnProduct2_Click(object sender, EventArgs e)
         {
-            //labList.Text = "";
             countTequila += 1;
             priceTequila = pricePerTequila * countTequila;
             if (countTequila >= 1)
