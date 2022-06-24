@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace Lab_FormHw
 {
-    public partial class Frm_StudentGrade : Form
+    public partial class Frm_Calculator : Form
     {
-        public Frm_StudentGrade()
+        public Frm_Calculator()
         {
             InitializeComponent();
         }
-
-        // Random rdm = new Random();
-        // .Next(0, 100)
-        // for loop i<20
     }
 }

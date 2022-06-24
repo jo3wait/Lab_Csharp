@@ -96,10 +96,24 @@ namespace Lab_Form
         private void txtID_TextChanged(object sender, EventArgs e)
         {
             //labID.Text = IsIDCorrect(txtID.Text) ? "身分證格式正確" : "身分證格式錯誤";
+            if (IsIDCorrect(txtID.Text))
+            {
+                labID.Text = "身分證格式正確";
+                timer2.Enabled = false;
+                labID.BackColor = Color.Transparent;
+                labID.ForeColor = Color.Black;
+            }
+
+            else
+            {
+                labID.Text = "身分證格式錯誤";
+                timer2.Enabled = true;
+            }
         }
 
         //提示閃爍 Timer
-        bool flag = true;
+        bool flag = true; 
+        bool flag2 = true;
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (flag)
@@ -112,8 +126,23 @@ namespace Lab_Form
                 labPassword.BackColor = Color.Yellow;
                 labPassword.ForeColor = Color.Red;
             }
-            flag = !flag;
+            flag = !flag; // 反轉，才會反覆閃
         }
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (flag2)
+            {
+                labID.BackColor = Color.Blue;
+                labID.ForeColor = Color.Yellow;
+            }
+            else
+            {
+                labID.BackColor = Color.Yellow;
+                labID.ForeColor = Color.Blue;
+            }
+            flag2 = !flag2;
+        }
+
 
         // String常用屬性
         private void btnStringUSe_Click(object sender, EventArgs e)
@@ -134,6 +163,11 @@ namespace Lab_Form
             }
 
             MessageBox.Show(result);
+            
+            // .Insert(int indext, val)
+            // .IndexOf()
+            // .LastIndexOf()
+
         }
 
         

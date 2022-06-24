@@ -42,16 +42,14 @@ namespace Lab_FormHw
             this.btnAvr = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtMath
             // 
             this.txtMath.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtMath.Location = new System.Drawing.Point(158, 273);
-            this.txtMath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMath.Location = new System.Drawing.Point(105, 182);
             this.txtMath.Name = "txtMath";
-            this.txtMath.Size = new System.Drawing.Size(211, 39);
+            this.txtMath.Size = new System.Drawing.Size(142, 29);
             this.txtMath.TabIndex = 15;
             this.txtMath.Text = "0";
             this.txtMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -59,10 +57,9 @@ namespace Lab_FormHw
             // txtEng
             // 
             this.txtEng.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtEng.Location = new System.Drawing.Point(158, 207);
-            this.txtEng.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEng.Location = new System.Drawing.Point(105, 138);
             this.txtEng.Name = "txtEng";
-            this.txtEng.Size = new System.Drawing.Size(211, 39);
+            this.txtEng.Size = new System.Drawing.Size(142, 29);
             this.txtEng.TabIndex = 14;
             this.txtEng.Text = "0";
             this.txtEng.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -70,10 +67,9 @@ namespace Lab_FormHw
             // txtChi
             // 
             this.txtChi.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtChi.Location = new System.Drawing.Point(158, 135);
-            this.txtChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtChi.Location = new System.Drawing.Point(105, 90);
             this.txtChi.Name = "txtChi";
-            this.txtChi.Size = new System.Drawing.Size(211, 39);
+            this.txtChi.Size = new System.Drawing.Size(142, 29);
             this.txtChi.TabIndex = 13;
             this.txtChi.Text = "0";
             this.txtChi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -81,10 +77,9 @@ namespace Lab_FormHw
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtName.Location = new System.Drawing.Point(158, 69);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Location = new System.Drawing.Point(105, 46);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(211, 39);
+            this.txtName.Size = new System.Drawing.Size(142, 29);
             this.txtName.TabIndex = 12;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -92,10 +87,9 @@ namespace Lab_FormHw
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label4.Location = new System.Drawing.Point(63, 282);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(42, 188);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 30);
+            this.label4.Size = new System.Drawing.Size(49, 20);
             this.label4.TabIndex = 11;
             this.label4.Text = "數學: ";
             // 
@@ -103,10 +97,9 @@ namespace Lab_FormHw
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.Location = new System.Drawing.Point(63, 216);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(42, 144);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 30);
+            this.label3.Size = new System.Drawing.Size(49, 20);
             this.label3.TabIndex = 10;
             this.label3.Text = "英文: ";
             // 
@@ -114,10 +107,9 @@ namespace Lab_FormHw
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(63, 144);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(42, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 30);
+            this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "國文: ";
             // 
@@ -125,20 +117,18 @@ namespace Lab_FormHw
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(63, 78);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(42, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 30);
+            this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "姓名: ";
             // 
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAdd.Location = new System.Drawing.Point(69, 345);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Location = new System.Drawing.Point(46, 230);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(302, 42);
+            this.btnAdd.Size = new System.Drawing.Size(201, 28);
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "加入學生資料";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -146,10 +136,9 @@ namespace Lab_FormHw
             // btnAddRandom
             // 
             this.btnAddRandom.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAddRandom.Location = new System.Drawing.Point(69, 396);
-            this.btnAddRandom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddRandom.Location = new System.Drawing.Point(46, 264);
             this.btnAddRandom.Name = "btnAddRandom";
-            this.btnAddRandom.Size = new System.Drawing.Size(302, 42);
+            this.btnAddRandom.Size = new System.Drawing.Size(201, 28);
             this.btnAddRandom.TabIndex = 17;
             this.btnAddRandom.Text = "隨機儲存資料";
             this.btnAddRandom.UseVisualStyleBackColor = true;
@@ -157,10 +146,9 @@ namespace Lab_FormHw
             // btnAvr
             // 
             this.btnAvr.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAvr.Location = new System.Drawing.Point(69, 447);
-            this.btnAvr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAvr.Location = new System.Drawing.Point(46, 298);
             this.btnAvr.Name = "btnAvr";
-            this.btnAvr.Size = new System.Drawing.Size(302, 42);
+            this.btnAvr.Size = new System.Drawing.Size(201, 28);
             this.btnAvr.TabIndex = 18;
             this.btnAvr.Text = "各科統計";
             this.btnAvr.UseVisualStyleBackColor = true;
@@ -168,10 +156,9 @@ namespace Lab_FormHw
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(69, 531);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(46, 354);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(302, 42);
+            this.button1.Size = new System.Drawing.Size(201, 28);
             this.button1.TabIndex = 19;
             this.button1.Text = "重設所有資料";
             this.button1.UseVisualStyleBackColor = true;
@@ -179,29 +166,18 @@ namespace Lab_FormHw
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(69, 582);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(46, 388);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(302, 42);
+            this.button2.Size = new System.Drawing.Size(201, 28);
             this.button2.TabIndex = 20;
             this.button2.Text = "隨機加入20筆";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(475, 69);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 18);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "成績";
-            // 
             // Frm_StudentGrade
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 675);
-            this.Controls.Add(this.label5);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAvr);
@@ -215,7 +191,6 @@ namespace Lab_FormHw
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_StudentGrade";
             this.Text = "Frm_StudentGrade";
             this.ResumeLayout(false);
@@ -238,6 +213,5 @@ namespace Lab_FormHw
         private System.Windows.Forms.Button btnAvr;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label5;
     }
 }

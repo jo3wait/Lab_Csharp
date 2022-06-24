@@ -48,7 +48,7 @@ namespace Lab_FormHw
 
         private void btnMaxMin_Click(object sender, EventArgs e)
         {
-            //todo sort
+            //todo 同分處理
 
             //lstStudentScore.Sort();
             //for (int i = 0; i < lstStudentScore.Count; i++)

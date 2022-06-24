@@ -42,6 +42,7 @@ namespace Lab_Form
             this.btnCertify = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnStringUSe = new System.Windows.Forms.Button();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnString
@@ -150,6 +151,10 @@ namespace Lab_Form
             this.btnStringUSe.UseVisualStyleBackColor = true;
             this.btnStringUSe.Click += new System.EventHandler(this.btnStringUSe_Click);
             // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Frm_M32_string
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -187,5 +192,6 @@ namespace Lab_Form
         private System.Windows.Forms.Button btnCertify;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnStringUSe;
+        private System.Windows.Forms.Timer timer2;
     }
 }

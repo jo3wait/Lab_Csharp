@@ -31,6 +31,8 @@ namespace Lab_Form
         {
             this.btnRead = new System.Windows.Forms.Button();
             this.txtReadWrite = new System.Windows.Forms.TextBox();
+            this.btnWrite = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRead
@@ -52,11 +54,33 @@ namespace Lab_Form
             this.txtReadWrite.Size = new System.Drawing.Size(459, 390);
             this.txtReadWrite.TabIndex = 1;
             // 
+            // btnWrite
+            // 
+            this.btnWrite.Location = new System.Drawing.Point(96, 180);
+            this.btnWrite.Name = "btnWrite";
+            this.btnWrite.Size = new System.Drawing.Size(103, 56);
+            this.btnWrite.TabIndex = 2;
+            this.btnWrite.Text = "Write";
+            this.btnWrite.UseVisualStyleBackColor = true;
+            this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(96, 327);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 56);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Try Catch";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Frm_M34_ReadWrite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnWrite);
             this.Controls.Add(this.txtReadWrite);
             this.Controls.Add(this.btnRead);
             this.Name = "Frm_M34_ReadWrite";
@@ -70,5 +94,7 @@ namespace Lab_Form
 
         private System.Windows.Forms.Button btnRead;
         private System.Windows.Forms.TextBox txtReadWrite;
+        private System.Windows.Forms.Button btnWrite;
+        private System.Windows.Forms.Button button1;
     }
 }
