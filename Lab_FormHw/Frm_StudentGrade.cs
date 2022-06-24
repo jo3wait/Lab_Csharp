@@ -16,7 +16,7 @@ namespace Lab_FormHw
         {
             InitializeComponent();
         }
-        //test
+        
         // Random rdm = new Random();
         // .Next(0, 100)
         // for loop i<20

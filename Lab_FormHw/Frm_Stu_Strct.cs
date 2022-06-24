@@ -47,14 +47,7 @@ namespace Lab_FormHw
         }
 
         private void btnMaxMin_Click(object sender, EventArgs e)
-        {
-            //todo 同分處理
-
-            //lstStudentScore.Sort();
-            //for (int i = 0; i < lstStudentScore.Count; i++)
-            //{
-            //    labMaxMin.Text += $"{(StudentScore)lstStudentScore[i]}";
-            //}
+        {                                    
             for (int i = 0; i < lstStudentScore.Count; i++)
             {
                 double chi = ((StudentScore)lstStudentScore[i]).StudentChi;
@@ -64,15 +57,38 @@ namespace Lab_FormHw
                     labMaxMin.Text = $"最高科目成績為: 國文 {chi}分\n";
                 else if (eng > chi && eng > math)
                     labMaxMin.Text = $"最高科目成績為: 英文 {eng}分\n";
-                else
+                else if (math > chi && math > eng)
                     labMaxMin.Text = $"最高科目成績為: 數學 {math}分\n";
-
+                
                 if(chi < eng && chi < math)
                     labMaxMin.Text += $"最低科目成績為: 國文 {chi}分\n";
                 else if(eng<chi&&eng<math)
                     labMaxMin.Text += $"最低科目成績為: 英文 {eng}分\n";
-                else
+                else if (math < chi && math < eng)
                     labMaxMin.Text += $"最低科目成績為: 數學 {math}分\n";
+
+                if (chi == eng && chi > math)
+                    labMaxMin.Text = $"最高科目成績為: 國英 {chi}分\n" +
+                        $"最低科目成績為: 數學 {math}分";
+                else if (chi == math && chi > eng)
+                    labMaxMin.Text = $"最高科目成績為: 國數 {chi}分\n" +
+                        $"最低科目成績為: 英文 {eng}分";
+                else if (eng == math && eng > chi)
+                    labMaxMin.Text = $"最高科目成績為: 英數 {eng}分\n" +
+                        $"最低科目成績為: 國文 {chi}分";
+
+                if (chi == eng && chi < math)
+                    labMaxMin.Text = $"最高科目成績為: 數學 {math}分\n" +
+                        $"最低科目成績為: 國英 {chi}分";
+                else if (chi == math && chi < eng)
+                    labMaxMin.Text = $"最高科目成績為: 英文 {eng}分\n" +
+                        $"最低科目成績為: 國數 {chi}分";
+                else if (eng == math && eng < chi)
+                    labMaxMin.Text = $"最高科目成績為: 國文 {chi}分\n" +
+                        $"最低科目成績為: 英數 {eng}分";
+
+                if (chi == eng && chi == math)
+                    labMaxMin.Text = $"國英數同分: {chi}分";
             }
         }
 

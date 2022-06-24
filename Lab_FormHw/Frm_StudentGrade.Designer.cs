@@ -42,6 +42,8 @@ namespace Lab_FormHw
             this.btnAvr = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtMath
@@ -173,11 +175,29 @@ namespace Lab_FormHw
             this.button2.Text = "隨機加入20筆";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(323, 46);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(401, 233);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "label5";
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(323, 298);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(401, 118);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "label6";
+            // 
             // Frm_StudentGrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAvr);
@@ -213,5 +233,7 @@ namespace Lab_FormHw
         private System.Windows.Forms.Button btnAvr;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
