@@ -124,6 +124,18 @@
     <Compile Include="Frm_M29_GenericList.Designer.cs">
       <DependentUpon>Frm_M29_GenericList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_M32_string.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M32_string.Designer.cs">
+      <DependentUpon>Frm_M32_string.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_M34_ReadWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M34_ReadWrite.Designer.cs">
+      <DependentUpon>Frm_M34_ReadWrite.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyFirstClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -166,6 +178,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_M29_GenericList.resx">
       <DependentUpon>Frm_M29_GenericList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M32_string.resx">
+      <DependentUpon>Frm_M32_string.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M34_ReadWrite.resx">
+      <DependentUpon>Frm_M34_ReadWrite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

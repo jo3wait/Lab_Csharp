@@ -114,7 +114,11 @@ namespace Lab_Form
             while(i<=9)
             {
                 result += i + "\n";
-                i++;               // 如果沒寫i++，會產生無窮迴圈(i一直是0)
+                i++;               // 如果沒寫i++，會產生無窮迴圈(i一直是0) 
+
+                //break
+                if (i % 5 == 0)
+                    break;         //原本0~9，設定break後0~4
             }
 
             MessageBox.Show(result);
@@ -164,11 +168,23 @@ namespace Lab_Form
         {
             foreach( Control item in this.Controls)
             {
-                item.Left -= 10;
-                item.Top -= 10;
-                item.BackColor = Color.Honeydew;
+                //if(item.GetType() != typeof(Button))
+                //{
+                //    continue;  //略過非Button的控制項
+                //}
+
+                if(!(item is Button))
+                {
+                    continue;
+                }
+
+                item.Left -= 10; //Left至視窗左邊界距離，單位為pixel
+                item.Top -= 10; //Top至上邊界距離
+                item.BackColor = Color.Honeydew; 
                 item.ForeColor = Color.LightSalmon;
             }
+
+            // Control btn = new Button();
         }
     }
 }
