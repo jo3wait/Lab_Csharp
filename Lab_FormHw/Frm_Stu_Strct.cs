@@ -20,16 +20,7 @@ namespace Lab_FormHw
 
 
         ArrayList lstStudentScore = new ArrayList();
-        //void ShowScore()
-        //{
-        //    for (int i = 0; i < lstStudentScore.Count; i++)
-        //    {
-        //        labScore.Text += $"姓名: {((StudentScore)lstStudentScore[i]).StudentName}\n " +
-        //            $"國文: {((StudentScore)lstStudentScore[i]).StudentChi}\n" +
-        //            $"英文: {((StudentScore)lstStudentScore[i]).StudentEng}\n" +
-        //            $"數學: {((StudentScore)lstStudentScore[i]).StudentMath}\n";
-        //    }            
-        //}
+        
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -41,7 +32,6 @@ namespace Lab_FormHw
             score.StudentMath = double.Parse(txtMath.Text);
 
             lstStudentScore.Add(score);
-
         }
 
         private void btnShow_Click(object sender, EventArgs e)
@@ -54,8 +44,6 @@ namespace Lab_FormHw
                     $"英文: {((StudentScore)lstStudentScore[i]).StudentEng}\n" +
                     $"數學: {((StudentScore)lstStudentScore[i]).StudentMath}\n";
             }
-
-
         }
 
         private void btnMaxMin_Click(object sender, EventArgs e)
