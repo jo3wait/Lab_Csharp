@@ -39,6 +39,7 @@ namespace Lab_Form
             this.btnWhile = new System.Windows.Forms.Button();
             this.btnDo = new System.Windows.Forms.Button();
             this.btnFor = new System.Windows.Forms.Button();
+            this.btnForeach = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -128,7 +129,7 @@ namespace Lab_Form
             // btnDo
             // 
             this.btnDo.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnDo.Location = new System.Drawing.Point(545, 184);
+            this.btnDo.Location = new System.Drawing.Point(545, 149);
             this.btnDo.Name = "btnDo";
             this.btnDo.Size = new System.Drawing.Size(140, 68);
             this.btnDo.TabIndex = 8;
@@ -139,7 +140,7 @@ namespace Lab_Form
             // btnFor
             // 
             this.btnFor.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnFor.Location = new System.Drawing.Point(545, 286);
+            this.btnFor.Location = new System.Drawing.Point(545, 223);
             this.btnFor.Name = "btnFor";
             this.btnFor.Size = new System.Drawing.Size(140, 68);
             this.btnFor.TabIndex = 9;
@@ -147,11 +148,23 @@ namespace Lab_Form
             this.btnFor.UseVisualStyleBackColor = true;
             this.btnFor.Click += new System.EventHandler(this.btnFor_Click);
             // 
+            // btnForeach
+            // 
+            this.btnForeach.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnForeach.Location = new System.Drawing.Point(545, 297);
+            this.btnForeach.Name = "btnForeach";
+            this.btnForeach.Size = new System.Drawing.Size(140, 68);
+            this.btnForeach.TabIndex = 10;
+            this.btnForeach.Text = "foreach";
+            this.btnForeach.UseVisualStyleBackColor = true;
+            this.btnForeach.Click += new System.EventHandler(this.btnForeach_Click);
+            // 
             // Frm_M20
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnForeach);
             this.Controls.Add(this.btnFor);
             this.Controls.Add(this.btnDo);
             this.Controls.Add(this.btnWhile);
@@ -181,5 +194,6 @@ namespace Lab_Form
         private System.Windows.Forms.Button btnWhile;
         private System.Windows.Forms.Button btnDo;
         private System.Windows.Forms.Button btnFor;
+        private System.Windows.Forms.Button btnForeach;
     }
 }

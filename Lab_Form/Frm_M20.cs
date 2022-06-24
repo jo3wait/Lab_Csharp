@@ -159,5 +159,16 @@ namespace Lab_Form
             MessageBox.Show(result);
 
         }
+
+        private void btnForeach_Click(object sender, EventArgs e)
+        {
+            foreach( Control item in this.Controls)
+            {
+                item.Left -= 10;
+                item.Top -= 10;
+                item.BackColor = Color.Honeydew;
+                item.ForeColor = Color.LightSalmon;
+            }
+        }
     }
 }

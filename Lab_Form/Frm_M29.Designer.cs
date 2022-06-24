@@ -38,6 +38,7 @@ namespace Lab_Form
             this.txtEmpName = new System.Windows.Forms.TextBox();
             this.txtEmpAge = new System.Windows.Forms.TextBox();
             this.labShow = new System.Windows.Forms.Label();
+            this.btnAddDif = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -131,11 +132,23 @@ namespace Lab_Form
             this.labShow.TabIndex = 8;
             this.labShow.Text = "員工";
             // 
+            // btnAddDif
+            // 
+            this.btnAddDif.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnAddDif.Location = new System.Drawing.Point(111, 292);
+            this.btnAddDif.Name = "btnAddDif";
+            this.btnAddDif.Size = new System.Drawing.Size(108, 48);
+            this.btnAddDif.TabIndex = 9;
+            this.btnAddDif.Text = "加入不同資料型態";
+            this.btnAddDif.UseVisualStyleBackColor = true;
+            this.btnAddDif.Click += new System.EventHandler(this.btnAddDif_Click);
+            // 
             // Frm_M29
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAddDif);
             this.Controls.Add(this.labShow);
             this.Controls.Add(this.txtEmpAge);
             this.Controls.Add(this.txtEmpName);
@@ -163,5 +176,6 @@ namespace Lab_Form
         private System.Windows.Forms.TextBox txtEmpName;
         private System.Windows.Forms.TextBox txtEmpAge;
         private System.Windows.Forms.Label labShow;
+        private System.Windows.Forms.Button btnAddDif;
     }
 }
