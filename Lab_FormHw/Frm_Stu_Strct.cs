@@ -26,12 +26,24 @@ namespace Lab_FormHw
         {
             StudentScore score;
             score.StudentName = txtName.Text;
-            //TryParse未設
+            
             score.StudentChi = double.Parse(txtChi.Text);
             score.StudentEng = double.Parse(txtEng.Text);
             score.StudentMath = double.Parse(txtMath.Text);
 
-            lstStudentScore.Add(score);
+            //double num1 = 0;
+            //bool isNum1 = double.TryParse(txtNum1.Text, out num1);
+
+            //if (isNum1 && isNum2)
+            //{
+            //    lstStudentScore.Add(score);
+            //}
+            //else
+            //{
+            //    MessageBox.Show("請輸入正確數字");
+            //}
+
+
         }
 
         private void btnShow_Click(object sender, EventArgs e)
