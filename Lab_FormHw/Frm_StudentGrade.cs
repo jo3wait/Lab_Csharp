@@ -18,31 +18,84 @@ namespace Lab_FormHw
             InitializeComponent();
         }
 
-        // Random rdm = new Random();
+        Random rdm = new Random();
         // .Next(0, 100)
         // for loop i<20
 
-        ArrayList lstStudentScore = new ArrayList();
+        List<StudentGrade> lstStudentGrade = new List<StudentGrade>();
+
+        void ShowScore()
+        {
+            labShow.Text = "";
+
+            //todo 文字對齊
+            foreach (StudentGrade item in lstStudentGrade)
+            {
+                labShow.Text += $"{item.StudentName}    "+
+                    $"{item.StudentChi}   "+
+                    $"{item.StudentEng}   "+
+                    $"{item.StudentMath}   "+
+                    $"{item.StudentTotal}   "+
+                    $"{item.StudentAvg}   \n";
+            }
+        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            StudentScore score;
-            score.StudentName = txtName.Text;
-            //todo TryParse未設
-            score.StudentChi = double.Parse(txtChi.Text);
-            score.StudentEng = double.Parse(txtEng.Text);
-            score.StudentMath = double.Parse(txtMath.Text);
+            double numChi = 0;
+            double numEng = 0;
+            double numMath = 0;
+            
+            StudentGrade grade;
 
-            lstStudentScore.Add(score);
+            grade.StudentName = txtName.Text;
 
-            //ShowScore();
-            for (int i = 0; i < lstStudentScore.Count; i++)
+            bool isNumChi = double.TryParse(txtChi.Text, out numChi);
+            bool isNumEng = double.TryParse(txtEng.Text, out numEng);
+            bool isNumMath = double.TryParse(txtMath.Text, out numMath);
+
+            if (isNumChi && isNumEng && isNumMath)
             {
-                labShow.Text = $"姓名: {((StudentScore)lstStudentScore[i]).StudentName}\n" +
-                    $"國文: {((StudentScore)lstStudentScore[i]).StudentChi}\n" +
-                    $"英文: {((StudentScore)lstStudentScore[i]).StudentEng}\n" +
-                    $"數學: {((StudentScore)lstStudentScore[i]).StudentMath}\n";
+                grade.StudentChi = numChi;
+                grade.StudentEng = numEng;
+                grade.StudentMath = numMath;
+                grade.StudentTotal = numChi + numEng + numMath;
+                grade.StudentAvg = Math.Round(grade.StudentTotal/3, 1);
+                lstStudentGrade.Add(grade);                
             }
+            else
+            {
+                MessageBox.Show("成績請輸入數字");
+            }
+
+            ShowScore();
+        }
+
+        private void btnAvr_Click(object sender, EventArgs e)
+        {
+            labShow.Text = "";
+        }
+
+        private void btnAddRandom_Click(object sender, EventArgs e)
+        {
+            int RdmChi = rdm.Next(0, 100);
+            int RdmEng = rdm.Next(0, 100);
+            int RdmMath = rdm.Next(0, 100);
+
+            StudentGrade grade;
+            
+            //todo 隨機加入的編號
+            string RdmName = "rdm";
+
+            grade.StudentName = RdmName;
+            grade.StudentChi = RdmChi;
+            grade.StudentEng = RdmEng;
+            grade.StudentMath = RdmMath;
+            grade.StudentTotal = RdmChi + RdmEng + RdmMath;
+            grade.StudentAvg = Math.Round(grade.StudentTotal / 3, 1);
+            lstStudentGrade.Add(grade);
+
+            ShowScore();            
         }
     }
 }

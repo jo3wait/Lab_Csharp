@@ -16,7 +16,7 @@ namespace Lab_Form
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_M32_string());  //可於此更改程式進入點
+            Application.Run(new Frm_M29_GenericList());  //可於此更改程式進入點
         }
     }
 }

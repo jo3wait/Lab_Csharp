@@ -19,52 +19,60 @@ namespace Lab_FormHw
         }
 
 
-        ArrayList lstStudentScore = new ArrayList();
-        
+        //ArrayList lstStudentScore = new ArrayList();
+        List<StudentScore> lstStudentScore = new List<StudentScore>();
+
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            int numChi = 0;
+            int numEng = 0;
+            int numMath = 0; 
+            
             StudentScore score;
             score.StudentName = txtName.Text;
-            
-            score.StudentChi = double.Parse(txtChi.Text);
-            score.StudentEng = double.Parse(txtEng.Text);
-            score.StudentMath = double.Parse(txtMath.Text);
+                                    
+            bool isNumChi = int.TryParse(txtChi.Text, out numChi);
+            bool isNumEng = int.TryParse(txtEng.Text, out numEng);
+            bool isNumMath = int.TryParse(txtMath.Text, out numMath);
 
-            //double num1 = 0;
-            //bool isNum1 = double.TryParse(txtNum1.Text, out num1);
+            if (isNumChi && isNumEng && isNumMath)
+            {
+                score.StudentChi = numChi;
+                score.StudentEng = numEng;
+                score.StudentMath = numMath;
+                lstStudentScore.Add(score);
+            }
+            else
+            {
+                MessageBox.Show("成績請輸入數字");
+            }
 
-            //if (isNum1 && isNum2)
-            //{
-            //    lstStudentScore.Add(score);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("請輸入正確數字");
-            //}
+        }
 
-
+        void ShowScore()
+        {
+            foreach (StudentScore item in lstStudentScore)
+            {
+                labScore.Text = $"姓名: {item.StudentName}\n" +
+                    $"國文: {item.StudentChi}\n" +
+                    $"英文: {item.StudentEng}\n" +
+                    $"數學: {item.StudentMath}";
+            }
         }
 
         private void btnShow_Click(object sender, EventArgs e)
         {
-            //ShowScore();
-            for (int i = 0; i < lstStudentScore.Count; i++)
-            {
-                labScore.Text = $"姓名: {((StudentScore)lstStudentScore[i]).StudentName}\n" +
-                    $"國文: {((StudentScore)lstStudentScore[i]).StudentChi}\n" +
-                    $"英文: {((StudentScore)lstStudentScore[i]).StudentEng}\n" +
-                    $"數學: {((StudentScore)lstStudentScore[i]).StudentMath}\n";
-            }
+            ShowScore();            
         }
 
         private void btnMaxMin_Click(object sender, EventArgs e)
         {                                    
             for (int i = 0; i < lstStudentScore.Count; i++)
             {
-                double chi = ((StudentScore)lstStudentScore[i]).StudentChi;
-                double eng = ((StudentScore)lstStudentScore[i]).StudentEng;
-                double math = ((StudentScore)lstStudentScore[i]).StudentMath;
+                int chi = ((StudentScore)lstStudentScore[i]).StudentChi;
+                int eng = ((StudentScore)lstStudentScore[i]).StudentEng;
+                int math = ((StudentScore)lstStudentScore[i]).StudentMath;
                 if (chi > eng && chi > math)
                     labMaxMin.Text = $"最高科目成績為: 國文 {chi}分\n";
                 else if (eng > chi && eng > math)

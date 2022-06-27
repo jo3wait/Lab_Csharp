@@ -9,8 +9,20 @@ namespace Lab_FormHw
     public struct StudentScore
     {
         public string StudentName;
+        public int StudentChi;
+        public int StudentEng;
+        public int StudentMath;
+        //public double StudentTotal;
+        //public double StudentAvg;
+    }
+
+    public struct StudentGrade
+    {
+        public string StudentName;
         public double StudentChi;
         public double StudentEng;
         public double StudentMath;
+        public double StudentTotal;
+        public double StudentAvg;
     }
 }
