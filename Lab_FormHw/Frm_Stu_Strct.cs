@@ -30,8 +30,12 @@ namespace Lab_FormHw
             int numMath = 0; 
             
             StudentScore score;
+
+            if (string.IsNullOrEmpty(txtName.Text))
+                MessageBox.Show("請輸入姓名");
+
             score.StudentName = txtName.Text;
-                                    
+
             bool isNumChi = int.TryParse(txtChi.Text, out numChi);
             bool isNumEng = int.TryParse(txtEng.Text, out numEng);
             bool isNumMath = int.TryParse(txtMath.Text, out numMath);

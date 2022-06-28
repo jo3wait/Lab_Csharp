@@ -11,9 +11,7 @@ namespace Lab_FormHw
         public string StudentName;
         public int StudentChi;
         public int StudentEng;
-        public int StudentMath;
-        //public double StudentTotal;
-        //public double StudentAvg;
+        public int StudentMath;        
     }
 
     public struct StudentGrade
@@ -24,5 +22,7 @@ namespace Lab_FormHw
         public double StudentMath;
         public double StudentTotal;
         public double StudentAvg;
+        public string StudentMax;
+        public string StudentMin;
     }
 }

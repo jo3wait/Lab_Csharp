@@ -31,13 +31,13 @@ namespace Lab_FormHw
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.btnHello = new System.Windows.Forms.Button();
-            this.btnLoan = new System.Windows.Forms.Button();
-            this.btnPose = new System.Windows.Forms.Button();
-            this.btnStuStruc = new System.Windows.Forms.Button();
-            this.btnStu1 = new System.Windows.Forms.Button();
-            this.btnStu2 = new System.Windows.Forms.Button();
             this.btnCal = new System.Windows.Forms.Button();
+            this.btnStu2 = new System.Windows.Forms.Button();
+            this.btnStu1 = new System.Windows.Forms.Button();
+            this.btnStuStruc = new System.Windows.Forms.Button();
+            this.btnPose = new System.Windows.Forms.Button();
+            this.btnLoan = new System.Windows.Forms.Button();
+            this.btnHello = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -56,8 +56,8 @@ namespace Lab_FormHw
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 122;
+            this.splitContainer1.Size = new System.Drawing.Size(818, 448);
+            this.splitContainer1.SplitterDistance = 121;
             this.splitContainer1.TabIndex = 0;
             // 
             // splitContainer2
@@ -75,69 +75,9 @@ namespace Lab_FormHw
             this.splitContainer2.Panel1.Controls.Add(this.btnPose);
             this.splitContainer2.Panel1.Controls.Add(this.btnLoan);
             this.splitContainer2.Panel1.Controls.Add(this.btnHello);
-            this.splitContainer2.Size = new System.Drawing.Size(800, 324);
-            this.splitContainer2.SplitterDistance = 181;
+            this.splitContainer2.Size = new System.Drawing.Size(818, 323);
+            this.splitContainer2.SplitterDistance = 185;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // btnHello
-            // 
-            this.btnHello.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnHello.Location = new System.Drawing.Point(12, 14);
-            this.btnHello.Name = "btnHello";
-            this.btnHello.Size = new System.Drawing.Size(152, 26);
-            this.btnHello.TabIndex = 0;
-            this.btnHello.Text = "Say Hi";
-            this.btnHello.UseVisualStyleBackColor = true;
-            // 
-            // btnLoan
-            // 
-            this.btnLoan.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnLoan.Location = new System.Drawing.Point(12, 46);
-            this.btnLoan.Name = "btnLoan";
-            this.btnLoan.Size = new System.Drawing.Size(152, 26);
-            this.btnLoan.TabIndex = 1;
-            this.btnLoan.Text = "Loan";
-            this.btnLoan.UseVisualStyleBackColor = true;
-            // 
-            // btnPose
-            // 
-            this.btnPose.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnPose.Location = new System.Drawing.Point(12, 78);
-            this.btnPose.Name = "btnPose";
-            this.btnPose.Size = new System.Drawing.Size(152, 26);
-            this.btnPose.TabIndex = 2;
-            this.btnPose.Text = "Pose";
-            this.btnPose.UseVisualStyleBackColor = true;
-            // 
-            // btnStuStruc
-            // 
-            this.btnStuStruc.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnStuStruc.Location = new System.Drawing.Point(12, 110);
-            this.btnStuStruc.Name = "btnStuStruc";
-            this.btnStuStruc.Size = new System.Drawing.Size(152, 26);
-            this.btnStuStruc.TabIndex = 3;
-            this.btnStuStruc.Text = "Student Struct";
-            this.btnStuStruc.UseVisualStyleBackColor = true;
-            // 
-            // btnStu1
-            // 
-            this.btnStu1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnStu1.Location = new System.Drawing.Point(12, 142);
-            this.btnStu1.Name = "btnStu1";
-            this.btnStu1.Size = new System.Drawing.Size(152, 26);
-            this.btnStu1.TabIndex = 4;
-            this.btnStu1.Text = "Student Grade 1";
-            this.btnStu1.UseVisualStyleBackColor = true;
-            // 
-            // btnStu2
-            // 
-            this.btnStu2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnStu2.Location = new System.Drawing.Point(12, 174);
-            this.btnStu2.Name = "btnStu2";
-            this.btnStu2.Size = new System.Drawing.Size(152, 26);
-            this.btnStu2.TabIndex = 5;
-            this.btnStu2.Text = "Student Grade 2";
-            this.btnStu2.UseVisualStyleBackColor = true;
             // 
             // btnCal
             // 
@@ -149,11 +89,71 @@ namespace Lab_FormHw
             this.btnCal.Text = "Calculator";
             this.btnCal.UseVisualStyleBackColor = true;
             // 
+            // btnStu2
+            // 
+            this.btnStu2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnStu2.Location = new System.Drawing.Point(12, 174);
+            this.btnStu2.Name = "btnStu2";
+            this.btnStu2.Size = new System.Drawing.Size(152, 26);
+            this.btnStu2.TabIndex = 5;
+            this.btnStu2.Text = "Student Grade 2";
+            this.btnStu2.UseVisualStyleBackColor = true;
+            // 
+            // btnStu1
+            // 
+            this.btnStu1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnStu1.Location = new System.Drawing.Point(12, 142);
+            this.btnStu1.Name = "btnStu1";
+            this.btnStu1.Size = new System.Drawing.Size(152, 26);
+            this.btnStu1.TabIndex = 4;
+            this.btnStu1.Text = "Student Grade 1";
+            this.btnStu1.UseVisualStyleBackColor = true;
+            // 
+            // btnStuStruc
+            // 
+            this.btnStuStruc.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnStuStruc.Location = new System.Drawing.Point(12, 110);
+            this.btnStuStruc.Name = "btnStuStruc";
+            this.btnStuStruc.Size = new System.Drawing.Size(152, 26);
+            this.btnStuStruc.TabIndex = 3;
+            this.btnStuStruc.Text = "Student Struct";
+            this.btnStuStruc.UseVisualStyleBackColor = true;
+            // 
+            // btnPose
+            // 
+            this.btnPose.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPose.Location = new System.Drawing.Point(12, 78);
+            this.btnPose.Name = "btnPose";
+            this.btnPose.Size = new System.Drawing.Size(152, 26);
+            this.btnPose.TabIndex = 2;
+            this.btnPose.Text = "Pose";
+            this.btnPose.UseVisualStyleBackColor = true;
+            // 
+            // btnLoan
+            // 
+            this.btnLoan.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnLoan.Location = new System.Drawing.Point(12, 46);
+            this.btnLoan.Name = "btnLoan";
+            this.btnLoan.Size = new System.Drawing.Size(152, 26);
+            this.btnLoan.TabIndex = 1;
+            this.btnLoan.Text = "Loan";
+            this.btnLoan.UseVisualStyleBackColor = true;
+            // 
+            // btnHello
+            // 
+            this.btnHello.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnHello.Location = new System.Drawing.Point(12, 14);
+            this.btnHello.Name = "btnHello";
+            this.btnHello.Size = new System.Drawing.Size(152, 26);
+            this.btnHello.TabIndex = 0;
+            this.btnHello.Text = "Say Hi";
+            this.btnHello.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(818, 448);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.Text = "Form1";

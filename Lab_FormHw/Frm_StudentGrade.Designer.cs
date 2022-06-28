@@ -40,11 +40,13 @@ namespace Lab_FormHw
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnAddRandom = new System.Windows.Forms.Button();
             this.btnAvr = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.labShow = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnAddRdm20 = new System.Windows.Forms.Button();
+            this.labSum = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.labShow = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtMath
@@ -150,6 +152,7 @@ namespace Lab_FormHw
             // 
             // btnAvr
             // 
+            this.btnAvr.Enabled = false;
             this.btnAvr.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnAvr.Location = new System.Drawing.Point(46, 298);
             this.btnAvr.Name = "btnAvr";
@@ -159,65 +162,76 @@ namespace Lab_FormHw
             this.btnAvr.UseVisualStyleBackColor = true;
             this.btnAvr.Click += new System.EventHandler(this.btnAvr_Click);
             // 
-            // button1
+            // btnClear
             // 
-            this.button1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(46, 354);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 28);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "重設所有資料";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnClear.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnClear.Location = new System.Drawing.Point(46, 354);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(201, 28);
+            this.btnClear.TabIndex = 19;
+            this.btnClear.Text = "重設所有資料";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // button2
+            // btnAddRdm20
             // 
-            this.button2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(46, 388);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(201, 28);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "隨機加入20筆";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAddRdm20.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnAddRdm20.Location = new System.Drawing.Point(46, 388);
+            this.btnAddRdm20.Name = "btnAddRdm20";
+            this.btnAddRdm20.Size = new System.Drawing.Size(201, 28);
+            this.btnAddRdm20.TabIndex = 20;
+            this.btnAddRdm20.Text = "隨機加入20筆";
+            this.btnAddRdm20.UseVisualStyleBackColor = true;
+            this.btnAddRdm20.Click += new System.EventHandler(this.btnAddRdm20_Click);
+            // 
+            // labSum
+            // 
+            this.labSum.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labSum.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labSum.Location = new System.Drawing.Point(286, 314);
+            this.labSum.Name = "labSum";
+            this.labSum.Size = new System.Drawing.Size(389, 102);
+            this.labSum.TabIndex = 22;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label7.Location = new System.Drawing.Point(13, 7);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(367, 240);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "姓名    國文  英文  數學  總分  平均    最高      最低    ";
             // 
             // labShow
             // 
             this.labShow.AutoSize = true;
+            this.labShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labShow.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labShow.Location = new System.Drawing.Point(325, 60);
+            this.labShow.Location = new System.Drawing.Point(9, 31);
             this.labShow.Name = "labShow";
-            this.labShow.Size = new System.Drawing.Size(11, 12);
+            this.labShow.Size = new System.Drawing.Size(2, 14);
             this.labShow.TabIndex = 21;
-            this.labShow.Text = "|";
             // 
-            // label6
+            // panel1
             // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(325, 298);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(343, 118);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "label6";
-            // 
-            // label7
-            // 
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label7.Location = new System.Drawing.Point(323, 46);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(345, 246);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "姓名      國文  英文  數學  總分  平均   最高    最低    ";
+            this.panel1.AutoScroll = true;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.labShow);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Location = new System.Drawing.Point(288, 46);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(387, 259);
+            this.panel1.TabIndex = 24;
             // 
             // Frm_StudentGrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 450);
-            this.Controls.Add(this.labShow);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnAddRdm20);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.labSum);
             this.Controls.Add(this.btnAvr);
             this.Controls.Add(this.btnAddRandom);
             this.Controls.Add(this.btnAdd);
@@ -231,6 +245,8 @@ namespace Lab_FormHw
             this.Controls.Add(this.label1);
             this.Name = "Frm_StudentGrade";
             this.Text = "Frm_StudentGrade";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,10 +265,11 @@ namespace Lab_FormHw
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnAddRandom;
         private System.Windows.Forms.Button btnAvr;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label labShow;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnAddRdm20;
+        private System.Windows.Forms.Label labSum;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labShow;
+        private System.Windows.Forms.Panel panel1;
     }
 }

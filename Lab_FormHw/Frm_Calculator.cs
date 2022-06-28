@@ -43,6 +43,8 @@ namespace Lab_FormHw
 
             //txtAns.Text = cal(num1, num2).ToString();
             
+            
+
             double num1 = 0;
             double num2 = 0;
             bool isNum1 = double.TryParse(txtNum1.Text, out num1);
