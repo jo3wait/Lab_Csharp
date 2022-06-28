@@ -46,15 +46,21 @@ namespace Lab_FormHw
             
         }
 
+        //double numChi = 0;
+        //double numEng = 0;
+        //double numMath = 0;
+        //string Max = "";
+        //string Min = "";
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             btnAvr.Enabled = true;
 
-            double numChi = 0;
-            double numEng = 0;
-            double numMath = 0;
-            string Max = "";
-            string Min = "";
+            //double numChi = 0;
+            //double numEng = 0;
+            //double numMath = 0;
+            //string Max = "";
+            //string Min = "";
 
             StudentGrade grade;
 
@@ -196,8 +202,8 @@ namespace Lab_FormHw
             int numChi = rdm.Next(0, 100);
             int numEng = rdm.Next(0, 100);
             int numMath = rdm.Next(0, 100);
-            string Max = "";
-            string Min = "";
+            //string Max = "";
+            //string Min = "";
 
             StudentGrade grade;            
                       
@@ -328,6 +334,64 @@ namespace Lab_FormHw
             }
 
             ShowScore();
+        }
+
+        double numChi = 0;
+        double numEng = 0;
+        double numMath = 0;
+        string Max = "";
+        string Min = "";
+        void AddList(double numChi, double numEng, double numMath, string Max, string Min)
+        {
+            StudentGrade grade; 
+            
+            grade.StudentName = (lstStudentGrade.Count + 1).ToString();
+            grade.StudentChi = numChi;
+            grade.StudentEng = numEng;
+            grade.StudentMath = numMath;
+            grade.StudentTotal = numChi + numEng + numMath;
+            grade.StudentAvg = Math.Round(grade.StudentTotal / 3, 1);
+
+            //Max
+            if (numChi > numEng && numChi > numMath)
+                Max = $"國文{numChi}";
+            else if (numEng > numChi && numEng > numMath)
+                Max = $"英文{numEng}";
+            else if (numMath > numChi && numMath > numEng)
+                Max = $"數學{numMath}";
+            else if
+                (numChi == numEng && numChi > numMath)
+                Max = $"國英{numChi}";
+            else if (numChi == numMath && numChi > numEng)
+                Max = $"國數{numChi}";
+            else if (numEng == numMath && numEng > numChi)
+                Max = $"英數{numEng}";
+
+            //Min
+            if (numChi < numEng && numChi < numMath)
+                Min = $"國文{numChi}";
+            else if (numEng < numChi && numEng < numMath)
+                Min = $"英文{numEng}";
+            else if (numMath < numChi && numMath < numEng)
+                Min = $"數學{numMath}";
+            else if (numChi == numEng && numChi < numMath)
+                Min = $"國英{numChi}";
+            else if (numChi == numMath && numChi < numEng)
+                Min = $"國數{numChi}";
+            else if (numEng == numMath && numEng < numChi)
+                Min = $"英數{numEng}";
+
+            // all same
+            if (numChi == numEng && numChi == numMath)
+            {
+                Max = "";
+                Min = $"國英數同分{numChi}";
+            }
+
+            grade.StudentMax = Max;
+            grade.StudentMin = Min;
+
+            lstStudentGrade.Add(grade);
         }
     }
 }

@@ -188,9 +188,9 @@ namespace Lab_FormHw
             // 
             this.labSum.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labSum.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labSum.Location = new System.Drawing.Point(286, 314);
+            this.labSum.Location = new System.Drawing.Point(288, 314);
             this.labSum.Name = "labSum";
-            this.labSum.Size = new System.Drawing.Size(389, 102);
+            this.labSum.Size = new System.Drawing.Size(387, 102);
             this.labSum.TabIndex = 22;
             // 
             // label7
