@@ -16,5 +16,8 @@ namespace Lab_FormHw
         {
             InitializeComponent();
         }
+
+        // new
+        // TopLevel = false
     }
 }
