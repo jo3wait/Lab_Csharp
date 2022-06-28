@@ -29,7 +29,6 @@ namespace Lab_FormHw
             return Math.Round(p);
         }
 
-        //todo 可以寫在方法外面嗎
         double l = 0;
         int y = 0;
         double i = 0;
@@ -37,62 +36,68 @@ namespace Lab_FormHw
 
         public void Test()
         {
-            
-            if(double.TryParse(txtLoan.Text, out l)
-                &&int.TryParse(txtYear.Text, out y)
+            if (double.TryParse(txtLoan.Text, out l)
+                && int.TryParse(txtYear.Text, out y)
                 && double.TryParse(txtInterest.Text, out i)
-                && double.TryParse(txtFirst.Text,out f))
+                && double.TryParse(txtFirst.Text, out f))
             {
                 l = double.Parse(txtLoan.Text);
                 y = int.Parse(txtYear.Text);
                 i = double.Parse(txtInterest.Text);
                 f = double.Parse(txtFirst.Text);
-            }            
+            }
             else
                 MessageBox.Show("請輸入正確數字");
-            
         }
-        
+
         private void btnPMT_Click(object sender, EventArgs e)
         {
-            Test();
-            
-            int perMonth = Convert.ToInt32(PMT(l, y, i, f));
-            //int pm = (int)Math.Round(perMonth);
-            MessageBox.Show("月付額: " + perMonth + "元");
+            try
+            {
+                Test();
+
+                int perMonth = Convert.ToInt32(PMT(l, y, i, f));
+                //int pm = (int)Math.Round(perMonth);
+                MessageBox.Show("月付額: " + perMonth + "元");
+            }
+            catch (OverflowException ex)
+            { }
+
         }
 
         private void btnTotal_Click(object sender, EventArgs e)
         {
-            Test();
-            //double l = Convert.ToDouble(txtLoan.Text);
-            //int y = int.Parse(txtYear.Text);
-            //double i = Convert.ToDouble(txtInterest.Text);
-            //double f = Convert.ToDouble(txtFirst.Text);
+            try
+            {
+                Test();
 
-            int total = y * 12 * Convert.ToInt32(PMT(l, y, i, f));
-            MessageBox.Show("總付款: " + total + "元");
+                int total = y * 12 * Convert.ToInt32(PMT(l, y, i, f));
+                MessageBox.Show("總付款: " + total + "元");
+            }
+            catch (OverflowException ex)
+            { }
         }
 
         private void btnReport_Click(object sender, EventArgs e)
         {
-            Test();
-            //double l = Convert.ToDouble(txtLoan.Text);
-            //int y = int.Parse(txtYear.Text);
-            //double i = Convert.ToDouble(txtInterest.Text);
-            //double f = Convert.ToDouble(txtFirst.Text);
+            try
+            {
+                Test();
 
-            int p = Convert.ToInt32(PMT(l, y, i, f));
-            int t = p * y * 12;
+                int p = Convert.ToInt32(PMT(l, y, i, f));
+                int t = p * y * 12;
 
-            Frm_Loan_Report LoanReport = new Frm_Loan_Report();
-            LoanReport.LoanR = this.txtLoan.Text;
-            LoanReport.YearR = this.txtYear.Text;
-            LoanReport.InterestR = this.txtInterest.Text;
-            LoanReport.PmtR = p.ToString();
-            LoanReport.TotalR = t.ToString();
+                Frm_Loan_Report LoanReport = new Frm_Loan_Report();
+                LoanReport.txtLoanR.Text = this.txtLoan.Text;
+                LoanReport.txtYearR.Text = this.txtYear.Text;
+                LoanReport.txtInterestR.Text = this.txtInterest.Text;
+                LoanReport.txtPmtR.Text = p.ToString();
+                LoanReport.txtTotalR.Text = t.ToString();
 
-            LoanReport.Show();
+                LoanReport.Show();
+            }
+            catch (OverflowException ex)
+            { }
         }
     }
 }
