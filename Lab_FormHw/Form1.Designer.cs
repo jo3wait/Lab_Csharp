@@ -38,6 +38,7 @@ namespace Lab_FormHw
             this.btnPose = new System.Windows.Forms.Button();
             this.btnLoan = new System.Windows.Forms.Button();
             this.btnHello = new System.Windows.Forms.Button();
+            this.btnNotePad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -48,6 +49,7 @@ namespace Lab_FormHw
             // 
             // splitContainer1
             // 
+            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
@@ -62,12 +64,15 @@ namespace Lab_FormHw
             // 
             // splitContainer2
             // 
+            this.splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
             this.splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
             // 
+            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.splitContainer2.Panel1.Controls.Add(this.btnNotePad);
             this.splitContainer2.Panel1.Controls.Add(this.btnCal);
             this.splitContainer2.Panel1.Controls.Add(this.btnStu2);
             this.splitContainer2.Panel1.Controls.Add(this.btnStu1);
@@ -148,6 +153,18 @@ namespace Lab_FormHw
             this.btnHello.TabIndex = 0;
             this.btnHello.Text = "Say Hi";
             this.btnHello.UseVisualStyleBackColor = true;
+            this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
+            // 
+            // btnNotePad
+            // 
+            this.btnNotePad.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnNotePad.Location = new System.Drawing.Point(12, 238);
+            this.btnNotePad.Name = "btnNotePad";
+            this.btnNotePad.Size = new System.Drawing.Size(152, 26);
+            this.btnNotePad.TabIndex = 7;
+            this.btnNotePad.Text = "Notepad";
+            this.btnNotePad.UseVisualStyleBackColor = true;
+            this.btnNotePad.Click += new System.EventHandler(this.btnNotePad_Click);
             // 
             // Form1
             // 
@@ -178,6 +195,7 @@ namespace Lab_FormHw
         private System.Windows.Forms.Button btnStuStruc;
         private System.Windows.Forms.Button btnPose;
         private System.Windows.Forms.Button btnLoan;
+        private System.Windows.Forms.Button btnNotePad;
     }
 }
 

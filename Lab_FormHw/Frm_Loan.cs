@@ -60,7 +60,7 @@ namespace Lab_FormHw
                 //int pm = (int)Math.Round(perMonth);
                 MessageBox.Show("月付額: " + perMonth + "元");
             }
-            catch (OverflowException ex)
+            catch (OverflowException)
             { }
 
         }
@@ -74,7 +74,7 @@ namespace Lab_FormHw
                 int total = y * 12 * Convert.ToInt32(PMT(l, y, i, f));
                 MessageBox.Show("總付款: " + total + "元");
             }
-            catch (OverflowException ex)
+            catch (OverflowException)
             { }
         }
 
@@ -96,7 +96,7 @@ namespace Lab_FormHw
 
                 LoanReport.Show();
             }
-            catch (OverflowException ex)
+            catch (OverflowException)
             { }
         }
     }

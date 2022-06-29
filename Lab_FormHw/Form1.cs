@@ -17,7 +17,23 @@ namespace Lab_FormHw
             InitializeComponent();
         }
 
+        private void btnNotePad_Click(object sender, EventArgs e)
+        {
+            //System.Diagnostics.Process.Start("notepad.exe");
+        }
+
+        private void btnHello_Click(object sender, EventArgs e)
+        {
+            Frm_Hello hello = new Frm_Hello();
+            hello.TopLevel = false;
+            //hello.AutoScroll = true;
+            hello.Show();
+            splitContainer2.Panel2.Controls.Add(hello);
+            
+        }
+
         // new
         // TopLevel = false
+        
     }
 }
