@@ -15,6 +15,8 @@ namespace Lab_FormHw
         public Form1()
         {
             InitializeComponent();
+            this.Location = new Point(0, 0); 
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
         }
 
         private void btnNotePad_Click(object sender, EventArgs e)
@@ -28,12 +30,64 @@ namespace Lab_FormHw
             hello.TopLevel = false;
             //hello.AutoScroll = true;
             hello.Show();
+            splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(hello);
-            
+
         }
 
-        // new
-        // TopLevel = false
-        
+        private void btnLoan_Click(object sender, EventArgs e)
+        {
+            Frm_Loan loan = new Frm_Loan();
+            loan.TopLevel = false;
+            loan.Show();
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(loan);
+        }
+
+        private void btnStuStruc_Click(object sender, EventArgs e)
+        {
+            Frm_Stu_Strct strct = new Frm_Stu_Strct();
+            strct.TopLevel = false;
+            strct.Show();
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(strct);
+        }
+
+        private void btnStu1_Click(object sender, EventArgs e)
+        {
+            Frm_StudentGrade grade1 = new Frm_StudentGrade();
+            grade1.TopLevel = false;
+            grade1.Show();
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(grade1);
+        }
+
+        private void btnStu2_Click(object sender, EventArgs e)
+        {
+            Frm_StudentGrade_List grade2 = new Frm_StudentGrade_List();
+            grade2.TopLevel = false;
+            grade2.Show();
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(grade2);
+        }
+
+        private void btnCal_Click(object sender, EventArgs e)
+        {
+            Frm_Calculator cal = new Frm_Calculator();
+            cal.TopLevel = false;
+            cal.Show();
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(cal);
+        }
+
+        private void btnPose_Click(object sender, EventArgs e)
+        {
+            Frm_Pose pose = new Frm_Pose();
+            pose.TopLevel = false;
+            pose.Show();
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(pose);
+        }
     }
+        
 }

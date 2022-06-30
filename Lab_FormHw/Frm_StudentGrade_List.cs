@@ -23,7 +23,6 @@ namespace Lab_FormHw
         {
             labShow.Text = "";
 
-
             foreach (StudentGrade item in lstStudentGrade)
             {
                 labShow.Text += $"{item.StudentName,-6}" +
@@ -252,6 +251,38 @@ namespace Lab_FormHw
         private void btnSearch_Click(object sender, EventArgs e)
         {
 
+
+            double bot = 0;
+            double top = 0;
+
+            bool isNumBot = double.TryParse(txtBot.Text, out bot);
+            bool isNumTop = double.TryParse(txtTop.Text, out top);
+
+            if (isNumBot && isNumTop)
+            {
+                foreach (StudentGrade item in lstStudentGrade)
+                {
+                    if (item.StudentChi >= bot && item.StudentChi <= top)
+                    {
+                        labShow.Text = "";
+                        labShow.Text += $"{item.StudentName,-6}" +
+                            $"{item.StudentChi,6}" +
+                            $"{item.StudentEng,6}" +
+                            $"{item.StudentMath,6}" +
+                            $"{item.StudentTotal,6}" +
+                            $"{item.StudentAvg,6}" +
+                            $"{item.StudentMax,8}" +
+                            $"{item.StudentMin,8:N0}\n";
+                    }
+                    else
+                        labShow.Text = "搜尋範圍無結果";
+                }
+            }
+            else
+            {
+                MessageBox.Show("搜尋範圍請輸入數字", "Please Check!",
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }            
         }
     }
 }
