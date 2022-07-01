@@ -15,8 +15,12 @@ namespace Lab_FormHw
         public Form1()
         {
             InitializeComponent();
-            this.Location = new Point(0, 0); 
-            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            //FormBorderStyle = FormBorderStyle.None;
+            //WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Normal;
+            this.Bounds = Screen.PrimaryScreen.Bounds;
+            //this.Location = new Point(0, 0); 
+            //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
         }
 
         private void btnNotePad_Click(object sender, EventArgs e)
@@ -27,12 +31,12 @@ namespace Lab_FormHw
         private void btnHello_Click(object sender, EventArgs e)
         {
             Frm_Hello hello = new Frm_Hello();
-            hello.TopLevel = false;
-            //hello.AutoScroll = true;
+            hello.TopLevel = false;            
             hello.Show();
             splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(hello);
-
+            //hello.Dock = DockStyle.Fill;
+            //hello.Bounds = splitContainer2.Panel2.Bounds;
         }
 
         private void btnLoan_Click(object sender, EventArgs e)
@@ -87,6 +91,15 @@ namespace Lab_FormHw
             pose.Show();
             splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(pose);
+        }
+
+        private void btnGuess_Click(object sender, EventArgs e)
+        {
+            Frm_Guess guess = new Frm_Guess();
+            guess.TopLevel = false;
+            guess.Show();
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(guess);
         }
     }
         

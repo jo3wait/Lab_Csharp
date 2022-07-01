@@ -58,6 +58,12 @@
     <Compile Include="Frm_Calculator.Designer.cs">
       <DependentUpon>Frm_Calculator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Guess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Guess.Designer.cs">
+      <DependentUpon>Frm_Guess.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Hello.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     <Compile Include="Frm_Stu_Strct.Designer.cs">
       <DependentUpon>Frm_Stu_Strct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Guess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guess.Designer.cs">
+      <DependentUpon>Guess.cs</DependentUpon>
+    </Compile>
     <Compile Include="HwClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Calculator.resx">
       <DependentUpon>Frm_Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Guess.resx">
+      <DependentUpon>Frm_Guess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Hello.resx">
       <DependentUpon>Frm_Hello.cs</DependentUpon>
@@ -129,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Stu_Strct.resx">
       <DependentUpon>Frm_Stu_Strct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guess.resx">
+      <DependentUpon>Guess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

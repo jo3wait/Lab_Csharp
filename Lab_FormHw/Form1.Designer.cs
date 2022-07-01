@@ -39,6 +39,7 @@ namespace Lab_FormHw
             this.btnPose = new System.Windows.Forms.Button();
             this.btnLoan = new System.Windows.Forms.Button();
             this.btnHello = new System.Windows.Forms.Button();
+            this.btnGuess = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -72,6 +73,7 @@ namespace Lab_FormHw
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.splitContainer2.Panel1.Controls.Add(this.btnGuess);
             this.splitContainer2.Panel1.Controls.Add(this.btnNotePad);
             this.splitContainer2.Panel1.Controls.Add(this.btnCal);
             this.splitContainer2.Panel1.Controls.Add(this.btnStu2);
@@ -172,6 +174,17 @@ namespace Lab_FormHw
             this.btnHello.UseVisualStyleBackColor = true;
             this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
             // 
+            // btnGuess
+            // 
+            this.btnGuess.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnGuess.Location = new System.Drawing.Point(12, 270);
+            this.btnGuess.Name = "btnGuess";
+            this.btnGuess.Size = new System.Drawing.Size(152, 26);
+            this.btnGuess.TabIndex = 8;
+            this.btnGuess.Text = "Guess Number";
+            this.btnGuess.UseVisualStyleBackColor = true;
+            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -202,6 +215,7 @@ namespace Lab_FormHw
         private System.Windows.Forms.Button btnPose;
         private System.Windows.Forms.Button btnLoan;
         private System.Windows.Forms.Button btnNotePad;
+        private System.Windows.Forms.Button btnGuess;
     }
 }
 
