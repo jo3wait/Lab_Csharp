@@ -31,6 +31,7 @@ namespace Lab_FormHw
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.btnGuess = new System.Windows.Forms.Button();
             this.btnNotePad = new System.Windows.Forms.Button();
             this.btnCal = new System.Windows.Forms.Button();
             this.btnStu2 = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@ namespace Lab_FormHw
             this.btnPose = new System.Windows.Forms.Button();
             this.btnLoan = new System.Windows.Forms.Button();
             this.btnHello = new System.Windows.Forms.Button();
-            this.btnGuess = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -85,6 +85,17 @@ namespace Lab_FormHw
             this.splitContainer2.Size = new System.Drawing.Size(884, 406);
             this.splitContainer2.SplitterDistance = 199;
             this.splitContainer2.TabIndex = 0;
+            // 
+            // btnGuess
+            // 
+            this.btnGuess.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnGuess.Location = new System.Drawing.Point(12, 270);
+            this.btnGuess.Name = "btnGuess";
+            this.btnGuess.Size = new System.Drawing.Size(152, 26);
+            this.btnGuess.TabIndex = 8;
+            this.btnGuess.Text = "Guess Number";
+            this.btnGuess.UseVisualStyleBackColor = true;
+            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
             // 
             // btnNotePad
             // 
@@ -174,17 +185,6 @@ namespace Lab_FormHw
             this.btnHello.UseVisualStyleBackColor = true;
             this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
             // 
-            // btnGuess
-            // 
-            this.btnGuess.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnGuess.Location = new System.Drawing.Point(12, 270);
-            this.btnGuess.Name = "btnGuess";
-            this.btnGuess.Size = new System.Drawing.Size(152, 26);
-            this.btnGuess.TabIndex = 8;
-            this.btnGuess.Text = "Guess Number";
-            this.btnGuess.UseVisualStyleBackColor = true;
-            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -193,6 +193,7 @@ namespace Lab_FormHw
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);

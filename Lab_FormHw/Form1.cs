@@ -15,17 +15,17 @@ namespace Lab_FormHw
         public Form1()
         {
             InitializeComponent();
-            //FormBorderStyle = FormBorderStyle.None;
-            //WindowState = FormWindowState.Maximized;
-            this.WindowState = FormWindowState.Normal;
-            this.Bounds = Screen.PrimaryScreen.Bounds;
-            //this.Location = new Point(0, 0); 
-            //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            //this.WindowState = FormWindowState.Normal;
+            //this.Bounds = Screen.PrimaryScreen.Bounds;            
         }
 
         private void btnNotePad_Click(object sender, EventArgs e)
         {
-            //System.Diagnostics.Process.Start("notepad.exe");
+            Frm_Notepad note = new Frm_Notepad();
+            note.TopLevel = false;
+            note.Show();
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(note);            
         }
 
         private void btnHello_Click(object sender, EventArgs e)

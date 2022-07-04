@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,17 +20,40 @@ namespace Lab_FormHw
 
         //要宣告子表單的爸爸是誰 Owner 
 
-        Random rdm = new Random(); 
-        
+        Random rdm = new Random();
 
+        
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            int inp = 0;
-            int ans = rdm.Next(0, 100);
-            bool isNum = int.TryParse(txtInput.Text, out inp);
-            if (isNum && inp <= 100 && inp >= 0)
-            {
+            
 
+            Frm_Guess ori = new Frm_Guess();
+            ori = (Frm_Guess)this.Owner;
+
+            int input;
+            bool isNum = int.TryParse(txtInput.Text, out input);
+
+            if (isNum && input <= 100 && input >= 0)
+            {
+                if (input == Frm_Guess.ans)
+                {
+                    MessageBox.Show($"Congrats! You got {Frm_Guess.ans}.");
+                }
+
+                else if (input < Frm_Guess.ans)
+                {
+                    Frm_Guess.lstBot.Add(input);
+                    ori.labShow.Text = $"Too Small!!\n" +
+                        $"Between {Frm_Guess.lstBot[Frm_Guess.lstBot.Count-1]} " +
+                        $"to {Frm_Guess.lstTop[Frm_Guess.lstTop.Count - 1]}";                                        
+                }
+                else
+                {
+                    Frm_Guess.lstTop.Add(input);
+                    ori.labShow.Text = $"Too Large!!\n" +
+                        $"Between {Frm_Guess.lstBot[Frm_Guess.lstBot.Count - 1]} " +
+                        $"to {Frm_Guess.lstTop[Frm_Guess.lstTop.Count - 1]}";
+                }
             }
             else
             {

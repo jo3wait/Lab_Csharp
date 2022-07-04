@@ -25,4 +25,6 @@ namespace Lab_FormHw
         public string StudentMax;
         public string StudentMin;
     }
+
+ 
 }
