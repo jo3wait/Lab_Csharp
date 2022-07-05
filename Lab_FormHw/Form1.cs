@@ -101,6 +101,15 @@ namespace Lab_FormHw
             splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(guess);
         }
+
+        private void btnPaint_Click(object sender, EventArgs e)
+        {
+            Frm_Paint paint = new Frm_Paint();
+            paint.TopLevel = false;
+            paint.Show();
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(paint);
+        }
     }
         
 }

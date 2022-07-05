@@ -40,6 +40,7 @@ namespace Lab_FormHw
             this.btnPose = new System.Windows.Forms.Button();
             this.btnLoan = new System.Windows.Forms.Button();
             this.btnHello = new System.Windows.Forms.Button();
+            this.btnPaint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -73,6 +74,7 @@ namespace Lab_FormHw
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.splitContainer2.Panel1.Controls.Add(this.btnPaint);
             this.splitContainer2.Panel1.Controls.Add(this.btnGuess);
             this.splitContainer2.Panel1.Controls.Add(this.btnNotePad);
             this.splitContainer2.Panel1.Controls.Add(this.btnCal);
@@ -185,6 +187,17 @@ namespace Lab_FormHw
             this.btnHello.UseVisualStyleBackColor = true;
             this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
             // 
+            // btnPaint
+            // 
+            this.btnPaint.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPaint.Location = new System.Drawing.Point(12, 302);
+            this.btnPaint.Name = "btnPaint";
+            this.btnPaint.Size = new System.Drawing.Size(152, 26);
+            this.btnPaint.TabIndex = 9;
+            this.btnPaint.Text = "Paint";
+            this.btnPaint.UseVisualStyleBackColor = true;
+            this.btnPaint.Click += new System.EventHandler(this.btnPaint_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -217,6 +230,7 @@ namespace Lab_FormHw
         private System.Windows.Forms.Button btnLoan;
         private System.Windows.Forms.Button btnNotePad;
         private System.Windows.Forms.Button btnGuess;
+        private System.Windows.Forms.Button btnPaint;
     }
 }
 

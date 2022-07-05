@@ -36,20 +36,19 @@ namespace Lab_FormHw
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.預覽列印ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.replayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.自訂ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toUpperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,11 +59,12 @@ namespace Lab_FormHw
             this.greenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.blackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.內容ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.索引ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.搜尋ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.關於ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.預覽列印ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,8 +93,8 @@ namespace Lab_FormHw
             this.預覽列印ToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.檔案ToolStripMenuItem.Name = "檔案ToolStripMenuItem";
-            this.檔案ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.檔案ToolStripMenuItem.Text = "&Files";
+            this.檔案ToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.檔案ToolStripMenuItem.Text = "&File";
             // 
             // newToolStripMenuItem
             // 
@@ -130,6 +130,12 @@ namespace Lab_FormHw
             this.printToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.printToolStripMenuItem.Text = "&Print";
             // 
+            // 預覽列印ToolStripMenuItem
+            // 
+            this.預覽列印ToolStripMenuItem.Name = "預覽列印ToolStripMenuItem";
+            this.預覽列印ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.預覽列印ToolStripMenuItem.Text = "Print Processors";
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
@@ -148,51 +154,6 @@ namespace Lab_FormHw
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.editToolStripMenuItem.Text = "&Edit";
-            // 
-            // toolsToolStripMenuItem
-            // 
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.自訂ToolStripMenuItem,
-            this.optionsToolStripMenuItem});
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.toolsToolStripMenuItem.Text = "&Tools";
-            // 
-            // formatToolStripMenuItem
-            // 
-            this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.colorToolStripMenuItem,
-            this.fontToolStripMenuItem,
-            this.toUpperToolStripMenuItem,
-            this.toLowerToolStripMenuItem,
-            this.自動ToolStripMenuItem,
-            this.快速選色ToolStripMenuItem});
-            this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
-            this.formatToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.formatToolStripMenuItem.Text = "&Format";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.內容ToolStripMenuItem,
-            this.索引ToolStripMenuItem,
-            this.搜尋ToolStripMenuItem,
-            this.關於ToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(0, 60);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBox1.Size = new System.Drawing.Size(800, 393);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
             // 
             // undoToolStripMenuItem
             // 
@@ -233,17 +194,39 @@ namespace Lab_FormHw
             this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.selectAllToolStripMenuItem.Text = "Select All";
             // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.自訂ToolStripMenuItem,
+            this.optionsToolStripMenuItem});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.toolsToolStripMenuItem.Text = "&Tools";
+            // 
             // 自訂ToolStripMenuItem
             // 
             this.自訂ToolStripMenuItem.Name = "自訂ToolStripMenuItem";
             this.自訂ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.自訂ToolStripMenuItem.Text = "自訂";
+            this.自訂ToolStripMenuItem.Text = "Customized";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.optionsToolStripMenuItem.Text = "Options";
+            // 
+            // formatToolStripMenuItem
+            // 
+            this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.colorToolStripMenuItem,
+            this.fontToolStripMenuItem,
+            this.toUpperToolStripMenuItem,
+            this.toLowerToolStripMenuItem,
+            this.自動ToolStripMenuItem,
+            this.快速選色ToolStripMenuItem});
+            this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
+            this.formatToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.formatToolStripMenuItem.Text = "&Format";
             // 
             // colorToolStripMenuItem
             // 
@@ -273,7 +256,7 @@ namespace Lab_FormHw
             // 
             this.自動ToolStripMenuItem.Name = "自動ToolStripMenuItem";
             this.自動ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.自動ToolStripMenuItem.Text = "自動換行";
+            this.自動ToolStripMenuItem.Text = "Word Wrap";
             // 
             // 快速選色ToolStripMenuItem
             // 
@@ -284,7 +267,7 @@ namespace Lab_FormHw
             this.blackToolStripMenuItem});
             this.快速選色ToolStripMenuItem.Name = "快速選色ToolStripMenuItem";
             this.快速選色ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.快速選色ToolStripMenuItem.Text = "快速選色";
+            this.快速選色ToolStripMenuItem.Text = "Quick Color";
             // 
             // redToolStripMenuItem
             // 
@@ -310,35 +293,52 @@ namespace Lab_FormHw
             this.blackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.blackToolStripMenuItem.Text = "Black";
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.內容ToolStripMenuItem,
+            this.索引ToolStripMenuItem,
+            this.搜尋ToolStripMenuItem,
+            this.關於ToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
             // 內容ToolStripMenuItem
             // 
             this.內容ToolStripMenuItem.Name = "內容ToolStripMenuItem";
             this.內容ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.內容ToolStripMenuItem.Text = "內容";
+            this.內容ToolStripMenuItem.Text = "Content";
             // 
             // 索引ToolStripMenuItem
             // 
             this.索引ToolStripMenuItem.Name = "索引ToolStripMenuItem";
             this.索引ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.索引ToolStripMenuItem.Text = "索引";
+            this.索引ToolStripMenuItem.Text = "&Index";
             // 
             // 搜尋ToolStripMenuItem
             // 
             this.搜尋ToolStripMenuItem.Name = "搜尋ToolStripMenuItem";
             this.搜尋ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.搜尋ToolStripMenuItem.Text = "搜尋";
+            this.搜尋ToolStripMenuItem.Text = "&Search";
             // 
             // 關於ToolStripMenuItem
             // 
             this.關於ToolStripMenuItem.Name = "關於ToolStripMenuItem";
             this.關於ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.關於ToolStripMenuItem.Text = "關於";
+            this.關於ToolStripMenuItem.Text = "&About";
             // 
-            // 預覽列印ToolStripMenuItem
+            // richTextBox1
             // 
-            this.預覽列印ToolStripMenuItem.Name = "預覽列印ToolStripMenuItem";
-            this.預覽列印ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.預覽列印ToolStripMenuItem.Text = "預覽列印";
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Location = new System.Drawing.Point(0, 60);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.richTextBox1.Size = new System.Drawing.Size(800, 393);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
             // 
             // Frm_Notepad
             // 
