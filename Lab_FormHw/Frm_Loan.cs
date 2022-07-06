@@ -88,6 +88,7 @@ namespace Lab_FormHw
                 int t = p * y * 12;
 
                 Frm_Loan_Report LoanReport = new Frm_Loan_Report();
+
                 LoanReport.txtLoanR.Text = this.txtLoan.Text;
                 LoanReport.txtYearR.Text = this.txtYear.Text;
                 LoanReport.txtInterestR.Text = this.txtInterest.Text;

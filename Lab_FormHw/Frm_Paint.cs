@@ -25,7 +25,6 @@ namespace Lab_FormHw
             gra = Graphics.FromImage(bm);
             gra.Clear(Color.White);
             pictureBox1.Image = bm;
-            //gra = pictureBox1.CreateGraphics();
 
         }
 
@@ -33,13 +32,10 @@ namespace Lab_FormHw
         Graphics gra;
         bool paint = false;
         Point px, py;
-        //float size = 1;
         //Pen pen = new Pen(Color.Black, 1);  //index=1
         //Pen erase = new Pen(Color.White, 10);  //index=2
         int index = 1;
 
-        //ColorDialog cd = new ColorDialog();
-        //Color new_color;
 
         
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -50,15 +46,14 @@ namespace Lab_FormHw
              
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            
-             
+            this.Cursor = Cursors.Cross;
+
 
             if (paint)
             {
                 if (index == 1)
                 {
                     Pen pen = new Pen(btnColorPic.BackColor, trackBarSize.Value); 
-                    //float.Parse(txtPenSize.Text)
                     px = e.Location;
                     gra.DrawLine(pen, px, py);
                     py = px;
@@ -82,7 +77,6 @@ namespace Lab_FormHw
         private void btnPen_Click(object sender, EventArgs e)
         {
             index = 1;
-            //size = float.Parse(txtPenSize.Text);
         }
 
         private void btnErase_Click(object sender, EventArgs e)
@@ -101,20 +95,17 @@ namespace Lab_FormHw
         {
             ColorDialog cd = new ColorDialog(); 
             cd.ShowDialog();
-            //new_color = cd.Color;
             btnColorPic.BackColor = cd.Color;
         }
-              
-        private void txtPenSize_TextChanged(object sender, EventArgs e)
-        {
-            trackBarSize.Value = int.Parse(txtPenSize.Text);
-            //labSize.Text = txtPenSize.Text;
-        }
+
+        //private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        //{
+        //    this.Cursor = Cursors.Cross;
+        //}
 
         private void trackBarSize_Scroll(object sender, EventArgs e)
         {
-            //labSize.Text = trackBarSize.Value.ToString();
-            txtPenSize.Text = trackBarSize.Value.ToString();
+            labSize.Text = trackBarSize.Value.ToString();
         }
 
         

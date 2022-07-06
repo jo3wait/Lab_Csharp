@@ -31,17 +31,17 @@ namespace Lab_FormHw
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnColor = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.labSize = new System.Windows.Forms.Label();
             this.trackBarSize = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtPenSize = new System.Windows.Forms.TextBox();
             this.btnPen = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnErase = new System.Windows.Forms.Button();
             this.btnColorPic = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSize)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -70,22 +70,14 @@ namespace Lab_FormHw
             this.btnColor.UseVisualStyleBackColor = false;
             this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
             // 
-            // panel1
+            // labSize
             // 
-            this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.trackBarSize);
-            this.panel1.Controls.Add(this.txtPenSize);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnPen);
-            this.panel1.Controls.Add(this.btnClear);
-            this.panel1.Controls.Add(this.btnErase);
-            this.panel1.Controls.Add(this.btnColorPic);
-            this.panel1.Controls.Add(this.btnColor);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(671, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(129, 450);
-            this.panel1.TabIndex = 2;
+            this.labSize.AutoSize = true;
+            this.labSize.Location = new System.Drawing.Point(69, 359);
+            this.labSize.Name = "labSize";
+            this.labSize.Size = new System.Drawing.Size(11, 12);
+            this.labSize.TabIndex = 9;
+            this.labSize.Text = "1";
             // 
             // trackBarSize
             // 
@@ -104,21 +96,11 @@ namespace Lab_FormHw
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 334);
+            this.label1.Location = new System.Drawing.Point(62, 344);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 12);
             this.label1.TabIndex = 8;
             this.label1.Text = "Pencil Size";
-            // 
-            // txtPenSize
-            // 
-            this.txtPenSize.Location = new System.Drawing.Point(67, 349);
-            this.txtPenSize.Name = "txtPenSize";
-            this.txtPenSize.Size = new System.Drawing.Size(45, 22);
-            this.txtPenSize.TabIndex = 7;
-            this.txtPenSize.Text = "1";
-            this.txtPenSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtPenSize.TextChanged += new System.EventHandler(this.txtPenSize_TextChanged);
             // 
             // btnPen
             // 
@@ -168,6 +150,23 @@ namespace Lab_FormHw
             this.btnColorPic.TabIndex = 3;
             this.btnColorPic.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Controls.Add(this.labSize);
+            this.panel1.Controls.Add(this.trackBarSize);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnPen);
+            this.panel1.Controls.Add(this.btnClear);
+            this.panel1.Controls.Add(this.btnErase);
+            this.panel1.Controls.Add(this.btnColorPic);
+            this.panel1.Controls.Add(this.btnColor);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(671, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(129, 450);
+            this.panel1.TabIndex = 2;
+            // 
             // Frm_Paint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -178,9 +177,9 @@ namespace Lab_FormHw
             this.Name = "Frm_Paint";
             this.Text = "Frm_Paint";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarSize)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarSize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -189,13 +188,13 @@ namespace Lab_FormHw
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnColor;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnColorPic;
         private System.Windows.Forms.Button btnErase;
         private System.Windows.Forms.Button btnPen;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtPenSize;
         private System.Windows.Forms.TrackBar trackBarSize;
+        private System.Windows.Forms.Label labSize;
+        private System.Windows.Forms.Panel panel1;
     }
 }
