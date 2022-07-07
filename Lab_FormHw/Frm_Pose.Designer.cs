@@ -232,7 +232,7 @@ namespace Lab_FormHw
             // 
             this.labList.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labList.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labList.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labList.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labList.Location = new System.Drawing.Point(6, 25);
             this.labList.Name = "labList";

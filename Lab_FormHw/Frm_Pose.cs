@@ -18,12 +18,18 @@ namespace Lab_FormHw
             InitializeComponent();
         }
 
-
         int countBeer, countTequila, countWhisky, countWine;
         int priceBeer, priceTequila, priceWhisky, priceWine, totalPrice;
         int pricePerBeer = 120, pricePerTequila = 180, 
             pricePerWhisky = 350, pricePerWine = 320;
         string showBeer, showTequila, showWhisky, showWine;
+
+        void Total()
+        {
+            totalPrice = priceBeer + priceTequila + priceWhisky + priceWine;
+            labTotal.Text = $"{totalPrice:c0}";
+            labList.Text = (showBeer + showTequila + showWhisky + showWine);
+        }
 
         private void btnProduct1_Click(object sender, EventArgs e)
         {
@@ -31,7 +37,7 @@ namespace Lab_FormHw
             priceBeer = pricePerBeer * countBeer;
             if (countBeer >= 1)
             {
-                showBeer = $"啤酒 Beer x { countBeer}, 共{ priceBeer}元\n";
+                showBeer = $"美式咖啡 Americano x {countBeer}, 共{priceBeer}元\n";
             }
            
             Total();
@@ -43,7 +49,7 @@ namespace Lab_FormHw
             priceTequila = pricePerTequila * countTequila;
             if (countTequila >= 1)
             {
-                showTequila = $"龍舌蘭 Tequila x { countTequila}, 共{ priceTequila}元\n";
+                showTequila = $"拿鐵咖啡 Latte x {countTequila}, 共{priceTequila}元\n";
             }
 
             Total();
@@ -55,7 +61,7 @@ namespace Lab_FormHw
             priceWhisky = pricePerWhisky * countWhisky;
             if (countWhisky >= 1)
             {
-                showWhisky = $"威士忌 Whisky x { countWhisky}, 共{ priceWhisky}元\n";
+                showWhisky = $"乳酪蛋糕 Cheesecake x {countWhisky}, 共{priceWhisky}元\n";
             }
             Total();
         }
@@ -66,7 +72,7 @@ namespace Lab_FormHw
             priceWine = pricePerWine * countWine;
             if (countWine >= 1)
             {
-                showWine = $"紅酒 Wine x { countWine}, 共{ priceWine}元\n";
+                showWine = $"肉桂捲 Cinnamon Roll x {countWine}, 共{priceWine}元\n";
             }
             Total();
         }
@@ -76,16 +82,11 @@ namespace Lab_FormHw
             labList.Text = "尚未點餐";
             showBeer = ""; showTequila = ""; showWhisky = "";showWine = "";
             countBeer = countTequila = countWhisky = countWine = 0;
+            priceBeer = priceTequila = priceWhisky = priceWine = totalPrice = 0;
             labTotal.Text = "NT$ 0";
         }
 
-        void Total()
-        {
-            totalPrice = priceBeer + priceTequila + priceWhisky + priceWine;
-            labTotal.Text = $"{totalPrice:c0}";
-            labList.Text = (showBeer + showTequila + showWhisky + showWine);
-        }              
-
+        
         private void btnCash_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"總金額: {totalPrice:c0}");

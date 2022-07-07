@@ -19,8 +19,6 @@ namespace Lab_FormHw
             //https://www.youtube.com/watch?v=m7Ohm52TIhw
             //https://www.youtube.com/watch?v=cHncA_aCVmM
 
-            this.Width = 900;
-            this.Height = 700;
             bm = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             gra = Graphics.FromImage(bm);
             gra.Clear(Color.White);
@@ -97,12 +95,7 @@ namespace Lab_FormHw
             cd.ShowDialog();
             btnColorPic.BackColor = cd.Color;
         }
-
-        //private void pictureBox1_MouseEnter(object sender, EventArgs e)
-        //{
-        //    this.Cursor = Cursors.Cross;
-        //}
-
+        
         private void trackBarSize_Scroll(object sender, EventArgs e)
         {
             labSize.Text = trackBarSize.Value.ToString();

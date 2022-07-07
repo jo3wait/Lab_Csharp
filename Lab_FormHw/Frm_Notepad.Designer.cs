@@ -102,6 +102,7 @@ namespace Lab_FormHw
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "&New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
@@ -109,6 +110,7 @@ namespace Lab_FormHw
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
@@ -141,6 +143,7 @@ namespace Lab_FormHw
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -158,13 +161,13 @@ namespace Lab_FormHw
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.undoToolStripMenuItem.Text = "Undo";
             // 
             // replayToolStripMenuItem
             // 
             this.replayToolStripMenuItem.Name = "replayToolStripMenuItem";
-            this.replayToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.replayToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.replayToolStripMenuItem.Text = "Redo";
             // 
             // cutToolStripMenuItem
@@ -173,6 +176,7 @@ namespace Lab_FormHw
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.cutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cutToolStripMenuItem.Text = "Cut";
+            this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
             // copyToolStripMenuItem
             // 
@@ -180,6 +184,7 @@ namespace Lab_FormHw
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.copyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.copyToolStripMenuItem.Text = "Copy";
+            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
             // 
@@ -187,11 +192,12 @@ namespace Lab_FormHw
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pasteToolStripMenuItem.Text = "Paste";
+            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.selectAllToolStripMenuItem.Text = "Select All";
             // 
             // toolsToolStripMenuItem
@@ -206,13 +212,13 @@ namespace Lab_FormHw
             // 自訂ToolStripMenuItem
             // 
             this.自訂ToolStripMenuItem.Name = "自訂ToolStripMenuItem";
-            this.自訂ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自訂ToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.自訂ToolStripMenuItem.Text = "Customized";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // formatToolStripMenuItem
@@ -233,29 +239,33 @@ namespace Lab_FormHw
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
             this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colorToolStripMenuItem.Text = "Color";
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
             // fontToolStripMenuItem
             // 
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
             this.fontToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fontToolStripMenuItem.Text = "Font";
+            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
             // toUpperToolStripMenuItem
             // 
             this.toUpperToolStripMenuItem.Name = "toUpperToolStripMenuItem";
             this.toUpperToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.toUpperToolStripMenuItem.Text = "To Upper";
+            this.toUpperToolStripMenuItem.Click += new System.EventHandler(this.toUpperToolStripMenuItem_Click);
             // 
             // toLowerToolStripMenuItem
             // 
             this.toLowerToolStripMenuItem.Name = "toLowerToolStripMenuItem";
             this.toLowerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.toLowerToolStripMenuItem.Text = "To Lower";
+            this.toLowerToolStripMenuItem.Click += new System.EventHandler(this.toLowerToolStripMenuItem_Click);
             // 
             // 自動ToolStripMenuItem
             // 
             this.自動ToolStripMenuItem.Name = "自動ToolStripMenuItem";
-            this.自動ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.自動ToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.自動ToolStripMenuItem.Text = "Word Wrap";
             // 
             // 快速選色ToolStripMenuItem
@@ -274,24 +284,28 @@ namespace Lab_FormHw
             this.redToolStripMenuItem.Name = "redToolStripMenuItem";
             this.redToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.redToolStripMenuItem.Text = "Red";
+            this.redToolStripMenuItem.Click += new System.EventHandler(this.redToolStripMenuItem_Click);
             // 
             // greenToolStripMenuItem
             // 
             this.greenToolStripMenuItem.Name = "greenToolStripMenuItem";
             this.greenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.greenToolStripMenuItem.Text = "Green";
+            this.greenToolStripMenuItem.Click += new System.EventHandler(this.greenToolStripMenuItem_Click);
             // 
             // blueToolStripMenuItem
             // 
             this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
             this.blueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.blueToolStripMenuItem.Text = "Blue";
+            this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
             // 
             // blackToolStripMenuItem
             // 
             this.blackToolStripMenuItem.Name = "blackToolStripMenuItem";
             this.blackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.blackToolStripMenuItem.Text = "Black";
+            this.blackToolStripMenuItem.Click += new System.EventHandler(this.blackToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -307,19 +321,19 @@ namespace Lab_FormHw
             // 內容ToolStripMenuItem
             // 
             this.內容ToolStripMenuItem.Name = "內容ToolStripMenuItem";
-            this.內容ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.內容ToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.內容ToolStripMenuItem.Text = "Content";
             // 
             // 索引ToolStripMenuItem
             // 
             this.索引ToolStripMenuItem.Name = "索引ToolStripMenuItem";
-            this.索引ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.索引ToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.索引ToolStripMenuItem.Text = "&Index";
             // 
             // 搜尋ToolStripMenuItem
             // 
             this.搜尋ToolStripMenuItem.Name = "搜尋ToolStripMenuItem";
-            this.搜尋ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.搜尋ToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.搜尋ToolStripMenuItem.Text = "&Search";
             // 
             // 關於ToolStripMenuItem
@@ -327,6 +341,7 @@ namespace Lab_FormHw
             this.關於ToolStripMenuItem.Name = "關於ToolStripMenuItem";
             this.關於ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.關於ToolStripMenuItem.Text = "&About";
+            this.關於ToolStripMenuItem.Click += new System.EventHandler(this.關於ToolStripMenuItem_Click);
             // 
             // richTextBox1
             // 
@@ -336,6 +351,7 @@ namespace Lab_FormHw
             this.richTextBox1.Location = new System.Drawing.Point(0, 60);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.richTextBox1.ShortcutsEnabled = false;
             this.richTextBox1.Size = new System.Drawing.Size(800, 393);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";

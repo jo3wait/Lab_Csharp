@@ -22,10 +22,10 @@ namespace Lab_FormHw
         private void btnNotePad_Click(object sender, EventArgs e)
         {
             Frm_Notepad note = new Frm_Notepad();
-            note.TopLevel = false;
+            //note.TopLevel = false;
             note.Show();
             splitContainer2.Panel2.Controls.Clear();
-            splitContainer2.Panel2.Controls.Add(note);            
+            //splitContainer2.Panel2.Controls.Add(note);            
         }
 
         private void btnHello_Click(object sender, EventArgs e)
