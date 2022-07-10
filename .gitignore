@@ -360,8 +360,11 @@ MigrationBackup/
 .ionide/
 
 # Excluded
-Lab_Console/
+Lab_Consloe/
 Lab_Form/
+
+# .vscode
+.vscode/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
