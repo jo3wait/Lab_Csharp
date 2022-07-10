@@ -255,9 +255,7 @@ namespace Lab_FormHw
 
             bool isNumBot = double.TryParse(txtBot.Text, out bot);
             bool isNumTop = double.TryParse(txtTop.Text, out top);
-
-            
-            //todo --check if there's any buggggg
+                        
             if (isNumBot && isNumTop)
             {
                 labShow.Text = "";
