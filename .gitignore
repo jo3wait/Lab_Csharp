@@ -359,10 +359,6 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
-# Excluded
-Lab_Consloe/
-Lab_Form/
-
 # .vscode
 .vscode/
 
